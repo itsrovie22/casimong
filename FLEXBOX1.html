@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            height: calc(100vh - 8px);
+            padding: 4px;
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+        }
+        nav, main, aside, footer{
+          border: 1px solid black;
+          display: flex;
+
+        }
+        .MAcont{
+            display: flex;
+            gap: 4px;
+            flex-grow: 1;
+        }
+        main{
+            flex-grow: 1;
+        }
+        .childbox{
+            border: 1px solid black;
+            width: 15vw;
+            height: 5vh;
+        }
+        .parentbox{
+            padding: 4px;
+            display: flex;
+            gap: 4px;
+            flex-direction: column;
+        }
+        .footer{
+            display: flex;
+        }
+      
+        nav{
+            padding: 2px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+
+        }
+        .redbox{
+            background-color: red;
+            width: 40px;
+            height: 40px;
+        }
+        .navcont{
+            display: flex;
+        }
+        .flexbox{
+            display: flex;
+            align-items: center;
+            margin: 2px;
+        }
+        .redbox2{
+            background-color: red;
+            width: 5vw;
+            height:5vh;
+        }
+        .navcont2{
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .box3{
+            background-color: red;
+            width: 40px;
+            height: 40px;
+        }
+        .parentfoot{
+            display: flex;
+        }
+        .flexbox2{
+            display: flex;
+            align-items: center;
+            margin: 2px;
+        }
+       footer{
+        display: flex;
+        gap: 2px;
+        padding: 2px;
+        flex-direction: column;
+        justify-content: center;
+       }
+       .linefoot{
+        background-color: black;
+        width: 1340px;
+        height: 1px;
+        margin: 4px;
+       }
+       .lastbox{
+        display: flex;
+        justify-content: center;
+        gap: 2px;
+        padding: 2px;
+       }
+       .boxchild{
+        background-color: red;
+        width: 20px;
+        height: 20px;
+       }
+       .footlast{
+        display: flex;
+        justify-content: center;
+       }
+       main{
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+        flex-direction: column;
+       }
+       .cont1{
+        border: 1px solid black;
+        display: flex;
+        gap: 4px;
+        padding :4px;
+        flex-wrap: wrap;
+        flex-direction: row;
+       }
+       .childcont{
+        border: 1px solid black;
+        height: 90px;
+        width: 90px;
+       }
+       .cont2{
+        border: 1px solid black;
+        display: flex;
+        gap: 4px;
+        padding: 4px;
+        justify-content: space-between;
+       }
+       .childcont2{
+        border: 1px solid black;
+        width: 25vw;
+        height: 20vh;
+       }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navcont">
+            <div class="redbox"></div>
+            <div class="flexbox">FLEXBOX</div>
+        </div>
+        <div class="navcont2">
+            <div class="redbox2"></div>
+            <div class="redbox2"></div>
+        </div>
+    </nav>
+   <div class="MAcont">
+    <main>
+        <div class="cont1">
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+            <div class="childcont"></div>
+        </div>
+        <div class="cont2">
+            <div class="childcont2"></div>
+            <div class="childcont2"></div>
+            <div class="childcont2"></div>
+        </div>
+    </main>
+    <aside>
+        <div class="parentbox">
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+            <div class="childbox"></div>
+        </div>
+    </aside>
+    
+</div>
+<footer>
+    <div class="parentfoot">
+        <div class="box3"></div>
+        <div class="flexbox2">FLEXBOX</div>
+    </div>
+<hr>
+    <div class="lastbox">
+        <div class="boxchild"></div>
+        <div class="boxchild"></div>
+        <div class="boxchild"></div>
+        <div class="boxchild"></div>
+        <div class="boxchild"></div>
+    </div>
+    <div class="footlast">©Copyright All rights reserved</div>
+</footer>
+</body>
+</html>
